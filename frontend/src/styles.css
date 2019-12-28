@@ -1,0 +1,137 @@
+:root {
+    --mainDark: #34495e;
+    --mainGrey: #95a5a6;
+    --mainBlue: #4834d4;
+    --mainRed: #d63031;
+    --mainLight: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainDark);
+}
+
+.mainRed {
+    background-color: var(--mainRed) !important;
+}
+
+.mainDark {
+    background-color: var(--mainDark);
+}
+
+.mainLight {
+    background-color: var(--mainLight);
+}
+
+.mainBlue {
+    background: var(--mainBlue);
+}
+
+/* Navbar */
+.main-nav {
+    height: 80px !important;
+    background: #0004;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-nav img {
+    width: 130px;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.main-nav span {
+    font-size: 1.3rem;
+    color: var(--mainLight);
+    border: 1px solid var(--mainLight);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.main-nav span:hover {
+    background-color: var(--mainLight);
+    color: var(--mainRed);
+    transition: all 300ms ease-in;
+}
+
+.btn-color:hover {
+    background: var(--mainRed);
+    border-color: var(--mainRed)
+}
+
+.form-absolute {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 15px black;
+}
+
+/* Form Product */
+
+.form-product {
+    background-color: var(--mainLight);
+    border-radius: 10px;
+    box-shadow: 0 1px 20px black;
+}
+
+/* Product Effect */
+.product-effect:hover{
+    background: #000;
+    transition: all 0.8s linear;
+    color: #fff!important;
+}
+
+.in-cart {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    margin: 0 !important;
+    background: var(--mainBlue);
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-white {
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.text-title {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--mainLight);
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainLight);
+}
+
+
