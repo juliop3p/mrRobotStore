@@ -24,5 +24,5 @@ mongoose.connect('mongodb://julio:32991046@omnisstack-shard-00-00-a9vqx.mongodb.
 app.use('/files', express.static(path.resolve(__dirname, '..', 'upload')))
 app.use(require('./routes'))
 
-const port = 8080
+const port = process.env.PORT || 8080
 app.listen(port, () => console.log('Server running on port ', port))
